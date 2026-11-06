@@ -1,0 +1,233 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff5e9;
+    color: #43210e;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: #f36b21;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin-left: 20px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #572400;
+}
+
+/* INÍCIO */
+
+.inicio {
+    min-height: 500px;
+    padding: 60px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    background: linear-gradient(
+        135deg,
+        #ff9c35,
+        #f36b21,
+        #e94b16
+    );
+}
+
+.conteudo {
+    max-width: 500px;
+}
+
+.conteudo h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.conteudo p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.botao {
+    display: inline-block;
+
+    background: white;
+    color: #e85b19;
+
+    padding: 13px 25px;
+    margin-top: 25px;
+
+    border-radius: 30px;
+    text-decoration: none;
+
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #572400;
+    color: white;
+    transform: scale(1.05);
+}
+
+.imagem img {
+    width: 350px;
+    max-width: 100%;
+
+    border-radius: 20px;
+    border: 5px solid white;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* SOBRE */
+
+.sobre {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.sobre h2,
+.receita h2 {
+    color: #e85b19;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: auto;
+
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+/* RECEITA */
+
+.receita {
+    background: #ffe2bd;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.receita img {
+    width: 300px;
+    max-width: 100%;
+
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.receita h3 {
+    color: #d84c13;
+    margin-bottom: 15px;
+}
+
+.receita ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.receita p {
+    line-height: 1.8;
+}
+
+.aviso {
+    font-size: 12px;
+    color: #773b20;
+    margin-top: 20px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #632b13;
+    color: white;
+
+    padding: 35px;
+    text-align: center;
+}
+
+footer h2 {
+    color: #ff9638;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+    font-size: 13px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    header {
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .conteudo h2 {
+        font-size: 30px;
+    }
+
+    .imagem img {
+        width: 280px;
+    }
+
+    .sobre,
+    .receita {
+        padding: 40px 20px;
+    }
+}
